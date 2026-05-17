@@ -1,0 +1,150 @@
+<?php
+/**
+ * Template Name: CIP Landing Page
+ * Template Post Type: page
+ *
+ * @package AstraChildCIP
+ */
+?>
+<!DOCTYPE html>
+<html <?php language_attributes(); ?>>
+<head>
+    <meta charset="<?php bloginfo( 'charset' ); ?>">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <?php wp_head(); ?>
+</head>
+<body <?php body_class( 'cip-landing' ); ?>>
+<?php wp_body_open(); ?>
+
+<!-- ========== NAVBAR ========== -->
+<nav class="cip-navbar" id="cipNavbar" role="navigation" aria-label="Navegación principal">
+    <div class="cip-navbar__container">
+        <!-- Logo -->
+        <a href="#inicio" class="cip-navbar__logo" aria-label="CIP - Inicio">
+            <img
+                src="<?php echo esc_url( content_url( '/uploads/2026/02/logo-1_transparent.png' ) ); ?>"
+                alt="CIP - Centro de Innovación Pública"
+                class="cip-navbar__logo-img"
+                width="180"
+                height="50"
+            >
+        </a>
+
+        <!-- Desktop Navigation -->
+        <ul class="cip-navbar__links" id="cipNavLinks">
+            <li><a href="#inicio" class="cip-navbar__link active">Inicio</a></li>
+            <li><a href="#el-cip" class="cip-navbar__link">El CIP</a></li>
+            <li><a href="#programa" class="cip-navbar__link">Programa</a></li>
+            <li><a href="#nuestra-dinamica" class="cip-navbar__link">Nuestra Dinámica</a></li>
+            <li><a href="#contacto" class="cip-navbar__link">Contacto</a></li>
+        </ul>
+
+        <!-- CTAs -->
+        <div class="cip-navbar__ctas">
+            <a href="#postularme" class="cip-btn cip-btn--primary cip-btn--sm">Postularme al Programa</a>
+            <a href="#staff" class="cip-btn cip-btn--outline-light cip-btn--sm">Sumarme al Staff</a>
+        </div>
+
+        <!-- Hamburger -->
+        <button
+            class="cip-navbar__hamburger"
+            id="cipHamburger"
+            type="button"
+            aria-label="Abrir menú de navegación"
+            aria-expanded="false"
+            aria-controls="cipMobileMenu"
+        >
+            <span class="cip-navbar__hamburger-line"></span>
+            <span class="cip-navbar__hamburger-line"></span>
+            <span class="cip-navbar__hamburger-line"></span>
+        </button>
+    </div>
+</nav>
+
+<!-- ========== MOBILE MENU ========== -->
+<div class="cip-mobile-menu" id="cipMobileMenu" aria-hidden="true">
+    <div class="cip-mobile-menu__content">
+        <ul class="cip-mobile-menu__links">
+            <li><a href="#inicio" class="cip-mobile-menu__link">Inicio</a></li>
+            <li><a href="#el-cip" class="cip-mobile-menu__link">El CIP</a></li>
+            <li><a href="#programa" class="cip-mobile-menu__link">Programa</a></li>
+            <li><a href="#nuestra-dinamica" class="cip-mobile-menu__link">Nuestra Dinámica</a></li>
+            <li><a href="#contacto" class="cip-mobile-menu__link">Contacto</a></li>
+        </ul>
+        <div class="cip-mobile-menu__ctas">
+            <a href="#postularme" class="cip-btn cip-btn--primary">Postularme al Programa</a>
+            <a href="#staff" class="cip-btn cip-btn--outline">Sumarme al Staff</a>
+        </div>
+    </div>
+</div>
+
+<!-- ========== HERO SECTION ========== -->
+<section class="cip-hero" id="inicio">
+    <div class="cip-hero__bg">
+        <div class="cip-hero__gradient"></div>
+        <div class="cip-hero__pattern"></div>
+        <div class="cip-hero__circle cip-hero__circle--1"></div>
+        <div class="cip-hero__circle cip-hero__circle--2"></div>
+        <div class="cip-hero__circle cip-hero__circle--3"></div>
+    </div>
+
+    <div class="cip-hero__content">
+        <p class="cip-hero__tag" data-animate="fade-up">Centro de Innovación Pública</p>
+        <h1 class="cip-hero__title" data-animate="fade-up" data-delay="100">
+            Ideas que <span class="cip-hero__title-accent">transforman.</span>
+        </h1>
+        <p class="cip-hero__subtitle" data-animate="fade-up" data-delay="200">
+            Capacitación de excelencia para los futuros líderes de la gestión pública local.
+        </p>
+        <div class="cip-hero__ctas" data-animate="fade-up" data-delay="300">
+            <a href="#postularme" class="cip-btn cip-btn--primary cip-btn--lg">
+                Postularme al Programa
+                <svg class="cip-btn__icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4.167 10h11.666M10.833 5l5 5-5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </a>
+            <a href="#staff" class="cip-btn cip-btn--outline-light cip-btn--lg">Sumarme al Staff</a>
+        </div>
+    </div>
+
+    <!-- Scroll Indicator -->
+    <div class="cip-hero__scroll" data-animate="fade-in" data-delay="600">
+        <span class="cip-hero__scroll-text">Descubrí más</span>
+        <div class="cip-hero__scroll-indicator">
+            <div class="cip-hero__scroll-dot"></div>
+        </div>
+    </div>
+</section>
+
+<!-- ========== PLACEHOLDER SECTIONS (anchor targets) ========== -->
+<section class="cip-section cip-section--light" id="el-cip">
+    <div class="cip-section__container">
+        <h2 class="cip-section__title" data-animate="fade-up">El CIP</h2>
+        <p class="cip-section__placeholder">Contenido próximamente...</p>
+    </div>
+</section>
+
+<section class="cip-section" id="programa">
+    <div class="cip-section__container">
+        <h2 class="cip-section__title" data-animate="fade-up">Programa</h2>
+        <p class="cip-section__placeholder">Contenido próximamente...</p>
+    </div>
+</section>
+
+<section class="cip-section cip-section--light" id="nuestra-dinamica">
+    <div class="cip-section__container">
+        <h2 class="cip-section__title" data-animate="fade-up">Nuestra Dinámica</h2>
+        <p class="cip-section__placeholder">Contenido próximamente...</p>
+    </div>
+</section>
+
+<section class="cip-section" id="contacto">
+    <div class="cip-section__container">
+        <h2 class="cip-section__title" data-animate="fade-up">Contacto</h2>
+        <p class="cip-section__placeholder">Contenido próximamente...</p>
+    </div>
+</section>
+
+<?php wp_footer(); ?>
+</body>
+</html>

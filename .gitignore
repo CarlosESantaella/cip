@@ -1,0 +1,45 @@
+# --- Credenciales y configuración sensible ---
+wp-config.php
+.private/
+.htaccess.bk
+
+# --- Dumps de base de datos ---
+*.sql
+*.sql.gz
+
+# --- Backups y archivos pesados (>100MB rechazados por GitHub) ---
+cip.zip
+*.wpress
+wp-content/ai1wm-backups/
+wp-content/backups/
+
+# --- Caché ---
+wp-content/cache/
+wp-content/litespeed/
+wp-content/uploads/cache/
+wp-content/uploads/litespeed/
+wp-content/advanced-cache.php
+wp-content/wp-cache-config.php
+
+# --- Logs ---
+*.log
+wp-content/debug.log
+error_log
+
+# --- Dependencias ---
+node_modules/
+vendor/
+composer.lock
+package-lock.json
+yarn.lock
+
+# --- Editor / OS ---
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*~
+
+# --- Claude Code local ---
+.claude/

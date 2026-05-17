@@ -1,0 +1,18 @@
+[
+    {
+        "link": "http:\/\/cip-wordpress.test\/post-type-elementor_library-sitemap-1.xml",
+        "updated": "2026-02-20T03:22:37+00:00"
+    },
+    {
+        "link": "http:\/\/cip-wordpress.test\/post-type-page-sitemap-1.xml",
+        "updated": "2026-02-20T03:22:37+00:00"
+    },
+    {
+        "link": "http:\/\/cip-wordpress.test\/post-type-post-sitemap-1.xml",
+        "updated": "2026-02-20T03:22:37+00:00"
+    },
+    {
+        "link": "http:\/\/cip-wordpress.test\/taxonomy-type-category-sitemap-1.xml",
+        "updated": "2026-02-20T03:22:37+00:00"
+    }
+]
